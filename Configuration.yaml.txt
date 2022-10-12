@@ -58,7 +58,7 @@ proxies:
         Host: uas-id01.iptr.xyz
     udp: true
 proxy-groups:
-  - name: GLOBALSSH-ELITETUNNEL
+  - name: GLOBALSSH
     type: select
     proxies:
       - "[VMess] OteOVH"
@@ -73,4 +73,4 @@ rule-providers:
     interval: 86400
 rules:
   - RULE-SET,reject,REJECT
-  - MATCH,GLOBALSSH-ELITETUNNEL
+  - MATCH,GLOBALSSH
